@@ -3,18 +3,14 @@ footer.site-footer {
   color: #fff;
   padding: 55px 0;
   margin: 0;
-}
-footer.site-footer p, footer.site-footer a {
-  color: inherit;
+  p, a {
+    color: inherit;
+  }
 }
 
 .site-footer__linklist-item {
   display: inline-block;
-}
-@media (min-width: 750px) {
-  .site-footer__linklist-item {
+  @media (min-width: 750px) {
     display: inline-block;
   }
 }
-
-/*# sourceMappingURL=echoing.css.liquid.map */

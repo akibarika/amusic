@@ -2,9 +2,9 @@
 assets/ajax-loader.gif:
   development: 2017-09-05T04:01:23-04:00   deca8b0ecd6974227d157b6d7068995d
 assets/echoing.css.liquid:
-  development: 2017-09-08T07:33:45-04:00   d6930283351223226a77b04820dfef93
+  development: 2017-09-09T00:59:51+12:00   e23a3eecf3f85ef193156841f500c6de
 assets/echoing.css.liquid.map:
-  development: 2017-09-08T07:33:46-04:00   672e363ae515eac4216b6670c9a312de
+  development: 2017-09-09T00:59:50+12:00   11e0f896cac5150a60d1d065e6bf7a7f
 assets/gift-card.js:
   development: 2017-09-05T04:01:23-04:00   d98dc5c9afcd8397babfd08c06e9899a
 assets/gift-card.scss.liquid:
@@ -32,7 +32,7 @@ layout/gift_card.liquid:
 layout/password.liquid:
   development: 2017-09-05T04:01:24-04:00   6351674ea67c53e01643a5bea02f7d0a
 layout/theme.liquid:
-  development: 2017-09-05T04:01:24-04:00   e142dde2901a39a683289073e1f62e75
+  development: 2017-09-09T00:45:20+12:00   4ee7d47891b2a94043a918e145be1c30
 locales/de.json:
   development: 2017-09-05T04:01:26-04:00   b7cd7749b0a0d9df967227ee73bcbb7f
 locales/en.default.json:
@@ -72,7 +72,7 @@ sections/featured-blog.liquid:
 sections/featured-product.liquid:
   development: 2017-09-05T04:01:22-04:00   9c2cd13b0e7e12c4468426c6119eb30e
 sections/footer.liquid:
-  development: 2017-09-09T00:07:58+12:00   3f89f2fdaf8b4a88d12e8ed4038ba897
+  development: 2017-09-09T00:57:16+12:00   e7a0c241989c79e7ac5e0c37da084b7c
 sections/header.liquid:
   development: 2017-09-05T04:01:22-04:00   5f835b5987b9ebff44c1e24bcea2f062
 sections/hero.liquid:
@@ -94,7 +94,7 @@ sections/password-footer.liquid:
 sections/password-header.liquid:
   development: 2017-09-05T04:01:22-04:00   96c731183fa1c3f2f87ca66501494897
 sections/product-template.liquid:
-  development: 2017-09-05T04:01:22-04:00   af76dab7f716f8f212581eb9e25bad4a
+  development: 2017-09-10T02:18:27+12:00   04993c293e65764008e8dde0cd41e8e7
 sections/quotes.liquid:
   development: 2017-09-05T04:01:22-04:00   b234ffff9a061befe87a0d69a121af1c
 sections/slideshow.liquid:
@@ -259,6 +259,8 @@ templates/page.contact.liquid:
   development: 2017-09-05T04:01:25-04:00   854f7fd02acf64bc9ce31bfd6994f791
 templates/page.liquid:
   development: 2017-09-05T04:01:25-04:00   26f97d3355078de5c6678ed3b34ad7f6
+templates/page.teachers.liquid:
+  development: '2017-09-10T01:21:50+12:00   '
 templates/password.liquid:
   development: 2017-09-05T04:01:25-04:00   30d1743d26765ce8c3fa53a3fdf9524f
 templates/product.liquid:

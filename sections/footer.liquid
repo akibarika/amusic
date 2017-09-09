@@ -17,7 +17,7 @@ or template.name == 'blog' %}
 <footer class="site-footer" role="contentinfo">
     <div class="page-width">
         <div class="grid grid--no-gutters">
-            <div class="grid__item{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist_two != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist_two == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
+            <div class="grid__item text-center">
                 {%- assign footer_linklist = section.settings.footer_linklist -%}
                 {% if linklists[footer_linklist].links.size > 0 %}
                     <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
@@ -29,8 +29,9 @@ or template.name == 'blog' %}
                     </ul>
                 {% endif %}
             </div>
-
-            <div class="grid__item{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
+        </div>
+        <div class="grid grid--no-gutters">
+            <div class="grid__item text-center">
                 {%- assign footer_linklist_two = section.settings.footer_linklist_two -%}
                 {% if linklists[footer_linklist_two].links.size > 0 %}
                     <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
@@ -42,16 +43,16 @@ or template.name == 'blog' %}
                     </ul>
                 {% endif %}
             </div>
-
-            {% if section.settings.footer_newsletter_enable %}
-                <div class="grid__item medium-up--one-half">
+        </div>
+        {% if section.settings.footer_newsletter_enable %}
+            <div class="grid grid--no-gutters">
+                <div class="grid__item">
                     <div class="site-footer__newsletter">
                         {% form 'customer' %}
                         {{ form.errors | default_errors }}
                         {% if form.posted_successfully? %}
                             <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
                         {% else %}
-                            <label for="Email" class="h4">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
                             <div class="input-group">
                                 <input type="hidden" name="contact[tags]" value="newsletter">
                                 <input type="email"
@@ -59,7 +60,7 @@ or template.name == 'blog' %}
                                        id="Email"
                                        class="input-group__field newsletter__input"
                                        value="{% if customer %}{{ customer.email }}{% endif %}"
-                                       placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                                       placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}"
                                        autocorrect="off"
                                        autocapitalize="off">
                                 <span class="input-group__btn">
@@ -72,8 +73,20 @@ or template.name == 'blog' %}
                         {% endform %}
                     </div>
                 </div>
-            {% endif %}
-        </div>
+            </div>
+        {% endif %}
+
+        {% if section.settings.footer_content_left != blank  or section.settings.footer_content_right != blank %}
+            <div class="grid grid--no-gutters">
+                <div class="grid__item{% if section.settings.footer_content_left != blank  and section.settings.footer_content_right != blank %} medium-up--one-half{% endif %}">
+                    {{ section.settings.footer_content_left }}
+                </div>
+                <div class="grid__item{% if section.settings.footer_content_left != blank  and section.settings.footer_content_right != blank %} medium-up--one-half{% endif %}">
+                    {{ section.settings.footer_content_right }}
+                </div>
+            </div>
+        {% endif %}
+
 
         <div class="grid grid--no-gutters">
             {% if social_icons %}
@@ -197,9 +210,6 @@ or template.name == 'blog' %}
                 <small class="site-footer__copyright-content">{{ powered_by_link }}</small>
             </div>
         {% endif %}
-        {% if section.settings.footer_content != blank %}
-            {{ section.settings.footer_content }}
-        {% endif %}
     </div>
 </footer>
 
@@ -232,9 +242,15 @@ or template.name == 'blog' %}
 "default": false
 },
 {
-"id": "footer_content",
+"id": "footer_content_left",
 "type": "richtext",
-"label": "Put your footer content",
+"label": "Put your footer content here",
+"default": "<p>test</p>"
+},
+{
+"id": "footer_content_right",
+"type": "richtext",
+"label": "Put your footer content here",
 "default": "<p>test</p>"
 }
 ]
