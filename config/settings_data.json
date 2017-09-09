@@ -36,7 +36,7 @@
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
-    "checkout_body_background_color": "#fff",
+    "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
     "checkout_sidebar_background_color": "#fafafa",
@@ -53,7 +53,7 @@
           "logo": "shopify:\/\/shop_images\/Group_8a607f72-aa1f-4f80-929b-b8b7f254c498.png",
           "logo_max_width": "150",
           "main_linklist": "main-menu",
-          "message": false,
+          "message": true,
           "home_page_only": true,
           "message_text": "Announce something here",
           "message_link": "",
@@ -82,8 +82,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Steinway_Spirio_2.jpg",
               "alignment": "top",
-              "title": "Image slide",
-              "subheading": "Tell your brand's story through video and images",
+              "title": "PLAY . LEARN . LISTEN . TRUST",
+              "subheading": "",
               "link": ""
             }
           },
@@ -92,8 +92,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Steinway_Piano_Keys.jpg",
               "alignment": "top",
-              "title": "Image slide",
-              "subheading": "Tell your brand's story through video and images",
+              "title": "PLAY . LEARN . LISTEN . TRUST",
+              "subheading": "",
               "link": ""
             }
           }
@@ -134,10 +134,12 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "footer_linklist": "footer",
+          "footer_linklist": "main-menu",
           "footer_linklist_two": "",
-          "footer_newsletter_enable": false,
-          "show_payment_icons": false
+          "footer_newsletter_enable": true,
+          "show_payment_icons": true,
+          "footer_content_left": "<p>New Market Train Station Square (240A Broadway, New Market, Auckland )<\/p>",
+          "footer_content_right": "<p>New Market Train Station Square (240A Broadway, New Market, Auckland )<\/p>"
         }
       },
       "collection-template": {
@@ -158,7 +160,7 @@
           "1504869032932-0": {
             "type": "text",
             "settings": {
-              "title": "",
+              "title": "毅衷音乐集团",
               "text": "<p>2017年，毅衷音乐集团在新西兰成立，是奥克兰地区专业音乐教育领域的新锐力量，凭借其超强的师资队伍和专业化的音乐咨询服务，成立伊始就成为了本地颇具潜力的业内新星。业务内容包括高端乐器的零售批发和音乐艺术教育。目前主要代理销售的钢琴品牌为柏斯音乐集团旗下的Wilh. Steinberg和长江，柏斯现为世界三大钢琴生产商之一，位列世界乐器行业第十一强。毅衷音乐集团在培养和塑造高质量音乐艺术人才的同时，还致力于推动新西兰音乐文化产业的发展，并组织和参与中、新两国的专业音乐文化交流活动，旨在&ldquo;一带一路&rdquo;的时代背景下，构建起高标准、高质量、高水平的国际音乐艺术交流合作平台。<\/p>",
               "width": "100%",
               "alignment": "center",
@@ -170,7 +172,7 @@
           "1504869032932-0"
         ],
         "settings": {
-          "title": "毅衷音乐集团"
+          "title": ""
         }
       },
       "1504869183841": {
@@ -178,12 +180,33 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/Guitar_Fender.jpg",
           "alignment": "center",
-          "title": "Image with text overlay",
-          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "title": "PIANOS NZ, SEE OUR RANGE OF UPRIGHT & GRAND PIANOS. STEINWAY, SONATA SERIES & MORE. ORDER YOURS TODAY",
+          "text": "",
           "hero_size": "medium",
           "text_size": "medium",
           "button_label": "",
           "button_link": ""
+        }
+      },
+      "1504870521291": {
+        "type": "custom-content",
+        "blocks": {
+          "1504870521291-0": {
+            "type": "text",
+            "settings": {
+              "title": "毅衷音乐学校",
+              "text": "<p>毅衷音乐学校整合了奥克兰地区优秀师资资源，团队成员皆拥有国内外著名音乐学院教育背景，同时还具备丰富的音乐教育实践经验。学校教育理念旨在全面培养学生的音乐综合素质，塑造学生的音乐艺术个性，同时为每一位优秀的学员提供表演和竞赛的舞台。<\/p>\n<p>&nbsp;<\/p>\n<p>毅衷音乐学校为不同年龄阶段的音乐爱好者度身定制了专业化的音乐课程，专业教师团队会根据学员的不同需求进行课程模块的设计。除了一对一的器乐课程以外，学校还提供多样化的自选课程，包括音乐启蒙课程、钢琴小组课、乐队合奏课、音乐理论基础课、英皇考级乐理课、英皇考级视唱课等。<\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1504870521291-0"
+        ],
+        "settings": {
+          "title": ""
         }
       }
     },
@@ -191,6 +214,7 @@
       "slideshow",
       "1504869032932",
       "1504869183841",
+      "1504870521291",
       "featured-collections",
       "hero",
       "feature-row"
