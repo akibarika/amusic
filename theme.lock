@@ -2,9 +2,9 @@
 assets/ajax-loader.gif:
   development: 2017-09-05T04:01:23-04:00   deca8b0ecd6974227d157b6d7068995d
 assets/echoing.css.liquid:
-  development: 2017-09-09T00:59:51+12:00   e23a3eecf3f85ef193156841f500c6de
+  development: 2017-09-14T23:41:25+12:00   0e68b656148b4c870dd5a0e258cc7754
 assets/echoing.css.liquid.map:
-  development: 2017-09-09T00:59:50+12:00   11e0f896cac5150a60d1d065e6bf7a7f
+  development: 2017-09-14T23:41:04+12:00   0ee3b0bca9b0b78fb9c56b1333688102
 assets/gift-card.js:
   development: 2017-09-05T04:01:23-04:00   d98dc5c9afcd8397babfd08c06e9899a
 assets/gift-card.scss.liquid:
@@ -72,7 +72,7 @@ sections/featured-blog.liquid:
 sections/featured-product.liquid:
   development: 2017-09-05T04:01:22-04:00   9c2cd13b0e7e12c4468426c6119eb30e
 sections/footer.liquid:
-  development: 2017-09-09T00:57:16+12:00   e7a0c241989c79e7ac5e0c37da084b7c
+  development: 2017-09-14T23:06:23+12:00   d50aaacdc085773c3acf934a470f9bd6
 sections/header.liquid:
   development: 2017-09-05T04:01:22-04:00   5f835b5987b9ebff44c1e24bcea2f062
 sections/hero.liquid:
@@ -255,8 +255,10 @@ templates/index.liquid:
   development: 2017-09-05T04:01:25-04:00   56b51b6f96394db4b17c64b43e1c0010
 templates/list-collections.liquid:
   development: 2017-09-05T04:01:25-04:00   d42f6d6957169811896f646709d353d9
+templates/page.about-us.liquid:
+  development: 2017-09-14T23:46:16+12:00   c74cfb085078cad334bda9f49a9e8d4d
 templates/page.contact.liquid:
-  development: 2017-09-05T04:01:25-04:00   854f7fd02acf64bc9ce31bfd6994f791
+  development: 2017-09-14T23:32:22+12:00   1267442b1297d29e40de507de89544fb
 templates/page.liquid:
   development: 2017-09-05T04:01:25-04:00   26f97d3355078de5c6678ed3b34ad7f6
 templates/page.teachers.liquid:

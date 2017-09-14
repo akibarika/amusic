@@ -1,48 +1,85 @@
-<div class="page-width">
-  <div class="grid">
-    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-      <div class="section-header text-center">
-        <h1>{{ page.title }}</h1>
-      </div>
-
-      {% if page.content.size > 0 %}
-        <div class="rte">
-          {{ page.content }}
+<div id="shopify-section-hero" class="shopify-section  index-section index-section--flush">
+    <div class="hero hero--medium hero__overlay box ratio-container js lazyloaded" data-bgset="//cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_180x.jpg?v=1505388496 180w 120h,
+    //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_360x.jpg?v=1505388496 360w 239h,
+    //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_540x.jpg?v=1505388496 540w 359h,
+    //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_720x.jpg?v=1505388496 720w 479h,
+    //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_900x.jpg?v=1505388496 900w 599h,
+    //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5.jpg?v=1505388496 1000w 665h" data-parent-fit="cover"
+         style="background-position: center center; background-image: url(&quot;https://cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5.jpg?v=1505388496&quot;);">
+        <div class="hero__inner">
+            <div class="page-width text-center">
+                <div class="rte-setting mega-subtitle mega-subtitle--large"><p>ADAMANTINE MUSIC GET IN TOUCH WITH US TO
+                        FIND OUT MORE ABOUT OUR PRODUCTS AND SERVICES. GIVE US A CALL OR SEND US AN EMAIL AND WE WILL BE
+                        HAPPY TO ASSIST.</p></div>
+            </div>
         </div>
-      {% endif %}
-
-      <div class="contact-form form-vertical">
-        {% form 'contact' %}
-
-          {% if form.posted_successfully? %}
-            <p class="note form-success">
-              {{ 'contact.form.post_success' | t }}
-            </p>
-          {% endif %}
-
-          {{ form.errors | default_errors }}
-
-          <div class="grid grid--half-gutters">
-            <div class="grid__item medium-up--one-half">
-              <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
-              <input type="text" id="ContactFormName" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
-            </div>
-            <div class="grid__item medium-up--one-half">
-              <label for="ContactFormEmail" class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
-              <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}" class="{% if form.errors contains 'email' %}input--error{% endif %}">
-            </div>
-          </div>
-
-          <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
-          <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
-
-          <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
-          <textarea rows="10" id="ContactFormMessage" name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
-
-          <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
-
-        {% endform %}
-      </div>
+        <picture style="display: none;">
+            <source data-srcset="//cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_180x.jpg?v=1505388496 180w 120h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_360x.jpg?v=1505388496 360w 239h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_540x.jpg?v=1505388496 540w 359h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_720x.jpg?v=1505388496 720w 479h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_900x.jpg?v=1505388496 900w 599h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5.jpg?v=1505388496 1000w 665h"
+                    sizes="1004px"
+                    srcset="//cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_180x.jpg?v=1505388496 180w 120h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_360x.jpg?v=1505388496 360w 239h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_540x.jpg?v=1505388496 540w 359h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_720x.jpg?v=1505388496 720w 479h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_900x.jpg?v=1505388496 900w 599h, //cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5.jpg?v=1505388496 1000w 665h">
+            <img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="1004px">
+        </picture>
     </div>
-  </div>
+
+    <noscript>
+        &lt;div class="hero hero--medium hero__overlay" style="background-image:
+        url('//cdn.shopify.com/s/files/1/2334/0831/files/Lewis_Eady_NOTE_5_2048x.jpg?v=1505388496');
+        background-position: center center;"&gt;&lt;/div&gt;
+    </noscript>
+</div>
+
+<div class="page-width">
+    <div class="grid">
+        <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+            <div class="section-header text-center">
+                <h1>{{ page.title }}</h1>
+            </div>
+
+            {% if page.content.size > 0 %}
+                <div class="rte">
+                    {{ page.content }}
+                </div>
+            {% endif %}
+
+            <div class="contact-form form-vertical">
+                {% form 'contact' %}
+
+                {% if form.posted_successfully? %}
+                    <p class="note form-success">
+                        {{ 'contact.form.post_success' | t }}
+                    </p>
+                {% endif %}
+
+                {{ form.errors | default_errors }}
+
+                <div class="grid grid--half-gutters">
+                    <div class="grid__item medium-up--one-half">
+                        <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+                        <input type="text" id="ContactFormName" name="contact[name]"
+                               value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+                    </div>
+                    <div class="grid__item medium-up--one-half">
+                        <label for="ContactFormEmail"
+                               class="{% if form.errors contains 'email' %}label--error{% endif %}">{{ 'contact.form.email' | t }}</label>
+                        <input type="email" id="ContactFormEmail" name="contact[email]" autocorrect="off"
+                               autocapitalize="off"
+                               value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                               class="{% if form.errors contains 'email' %}input--error{% endif %}">
+                    </div>
+                </div>
+
+                <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
+                <input type="tel" id="ContactFormPhone" name="contact[phone]" pattern="[0-9\-]*"
+                       value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+
+                <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
+                <textarea rows="10" id="ContactFormMessage"
+                          name="contact[body]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+                <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
+
+                {% endform %}
+            </div>
+        </div>
+    </div>
 </div>

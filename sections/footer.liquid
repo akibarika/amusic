@@ -44,6 +44,12 @@ or template.name == 'blog' %}
                 {% endif %}
             </div>
         </div>
+        <div class="grid grid--no-gutters">
+            <div class="grid__item">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.8750899578254!2d174.77655031531518!3d-36.869408579934394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4870d4534fab%3A0xf8e9009fe844948e!2s240A+Broadway%2C+Newmarket%2C+Auckland+1023!5e0!3m2!1sen!2snz!4v1505025048027"
+                        width="800" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
         {% if section.settings.footer_newsletter_enable %}
             <div class="grid grid--no-gutters">
                 <div class="grid__item">
@@ -78,10 +84,10 @@ or template.name == 'blog' %}
 
         {% if section.settings.footer_content_left != blank  or section.settings.footer_content_right != blank %}
             <div class="grid grid--no-gutters">
-                <div class="grid__item{% if section.settings.footer_content_left != blank  and section.settings.footer_content_right != blank %} medium-up--one-half{% endif %}">
+                <div class="grid__item{% if section.settings.footer_content_left != blank  and section.settings.footer_content_right != blank %} medium-up--one-half{% else %} text-center{% endif %}">
                     {{ section.settings.footer_content_left }}
                 </div>
-                <div class="grid__item{% if section.settings.footer_content_left != blank  and section.settings.footer_content_right != blank %} medium-up--one-half{% endif %}">
+                <div class="grid__item{% if section.settings.footer_content_left != blank  and section.settings.footer_content_right != blank %} medium-up--one-half{% else %} text-center{% endif %}">
                     {{ section.settings.footer_content_right }}
                 </div>
             </div>
@@ -181,7 +187,6 @@ or template.name == 'blog' %}
                     {% unless social_icons and section.settings.footer_newsletter_enable and section.settings.show_payment_icons %}
                     <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}
                         , {{ shop.name | link_to: '/' }}</small>
-                    <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
                     {% endunless %}
                     {% if section.settings.show_payment_icons %}
                         <div class="site-footer__payment-icons{% unless social_icons or section.settings.footer_newsletter_enable == blank %} site-footer__payment-icons--right{% endunless %}">
@@ -207,7 +212,6 @@ or template.name == 'blog' %}
             <div class="site-footer__copyright--bottom">
                 <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}
                     , {{ shop.name | link_to: '/' }}</small>
-                <small class="site-footer__copyright-content">{{ powered_by_link }}</small>
             </div>
         {% endif %}
     </div>
