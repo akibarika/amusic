@@ -2,9 +2,9 @@
 assets/ajax-loader.gif:
   development: 2017-09-05T04:01:23-04:00   deca8b0ecd6974227d157b6d7068995d
 assets/echoing.css.liquid:
-  development: 2017-09-14T23:41:25+12:00   0e68b656148b4c870dd5a0e258cc7754
+  development: 2017-09-22T23:58:50+12:00   dcfc43076c9dc3f667745ff517396123
 assets/echoing.css.liquid.map:
-  development: 2017-09-14T23:41:04+12:00   0ee3b0bca9b0b78fb9c56b1333688102
+  development: 2017-09-22T23:42:53+12:00   b7d0e517919e2e7609e5c72ad9541d94
 assets/gift-card.js:
   development: 2017-09-05T04:01:23-04:00   d98dc5c9afcd8397babfd08c06e9899a
 assets/gift-card.scss.liquid:
@@ -259,10 +259,12 @@ templates/page.about-us.liquid:
   development: 2017-09-14T23:46:16+12:00   c74cfb085078cad334bda9f49a9e8d4d
 templates/page.contact.liquid:
   development: 2017-09-14T23:32:22+12:00   1267442b1297d29e40de507de89544fb
+templates/page.courses.liquid:
+  development: 2017-09-22T23:20:35+12:00   f6c259662af7cf432aa67bce8858513c
 templates/page.liquid:
   development: 2017-09-21T21:29:10+12:00   26f97d3355078de5c6678ed3b34ad7f6
 templates/page.teachers.liquid:
-  development: 2017-09-17T00:29:33+12:00   2b9bc0d6821ab1807b237aa6bc9668b5
+  development: 2017-09-23T22:59:26+12:00   16116bb371fe810cd8e37a64f780cf92
 templates/page.wilh.liquid:
   development: 2017-09-21T21:30:30+12:00   3d0d80738718f4d18915c6e77ae9bdee
 templates/page.wilhtech.liquid:

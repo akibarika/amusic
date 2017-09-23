@@ -1,0 +1,17 @@
+body {
+  color: #fff;
+  background-color: #000;
+  header.site-header {
+    background-color: #fff;
+    color: #000;
+    a {
+      color: inherit;
+    }
+  }
+  p,a {
+    color: #fff;
+  }
+  .grid-view-item__title {
+    color:#fff;
+  }
+}

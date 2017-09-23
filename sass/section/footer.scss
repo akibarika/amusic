@@ -1,6 +1,6 @@
 footer.site-footer {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   padding: 0 0 45px;
   margin: 45px 0 0;
   p, a {
@@ -20,8 +20,8 @@ footer.site-footer {
 
 .site-footer__newsletter {
   .btn {
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     &:hover {
       opacity: 1;
     }
