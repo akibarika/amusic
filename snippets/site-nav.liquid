@@ -33,13 +33,14 @@
 
                     <div class="site-nav__childlist-item">
                       <a href="{{ childlink.url }}" class="site-nav__link site-nav__child-link site-nav__child-link--parent">{{ childlink.title | escape }}</a>
-                      {% for grandchildlink in linklists[grand_child_list_handle].links %}
                         <ul>
-                          <li>
-                            <a href="{{ grandchildlink.url }}" class="site-nav__link site-nav__child-link">{{ grandchildlink.title | escape }}</a>
-                          </li>
+                            {% for grandchildlink in linklists[grand_child_list_handle].links %}
+                                <li>
+                                    <a href="{{ grandchildlink.url }}"
+                                       class="site-nav__link site-nav__child-link">{{ grandchildlink.title | escape }}</a>
+                                </li>
+                            {% endfor %}
                         </ul>
-                      {% endfor %}
                     </div>
                   {% endfor %}
                 {% endif %}

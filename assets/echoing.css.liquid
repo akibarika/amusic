@@ -501,6 +501,10 @@ body .grid-view-item__title {
   color: #fff;
 }
 
+#MobileNav p, #MobileNav a {
+  color: #000;
+}
+
 footer.site-footer {
   background: #fff;
   color: #000;
@@ -540,6 +544,35 @@ footer.site-footer iframe {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+}
+
+.site-nav__childlist-grid {
+  display: block;
+  margin-bottom: 0;
+}
+.site-nav__childlist-grid .site-nav__childlist-item {
+  display: block;
+  -webkit-box-flex: inherit;
+      -ms-flex: inherit;
+          flex: inherit;
+  margin-bottom: 0;
+}
+.site-nav__childlist-grid .site-nav__childlist-item:hover a + ul {
+  display: block;
+}
+.site-nav__childlist-grid .site-nav__childlist-item ul {
+  display: none;
+}
+
+.teacher-avatar {
+  height: 200px;
+  width: 200px;
+  margin: 2.3rem auto;
+  border-radius: 50%;
+  border: 3px solid #f2f2f2;
+  text-align: center;
+  overflow: hidden;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=echoing.css.liquid.map */

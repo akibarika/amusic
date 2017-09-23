@@ -1,0 +1,17 @@
+.site-nav__childlist-grid {
+  display: block;
+  margin-bottom: 0;
+  .site-nav__childlist-item {
+    display: block;
+    flex: inherit;
+    margin-bottom: 0;
+    &:hover{
+      a + ul {
+        display: block;
+      }
+    }
+    ul {
+      display: none;
+    }
+  }
+}
